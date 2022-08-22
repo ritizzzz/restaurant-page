@@ -78,8 +78,38 @@ footer{
     cursor: pointer;
     transition: 0.3s;
     border-bottom: 1px solid black;
+    text-decoration: none;
+    color: black;
 }
 
 .links div:hover{
     padding-bottom: 4px;
+}
+
+.aboutContainer{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./shib.webp);
+    background-size: cover;
+
+}
+
+.copy{
+    padding: 2rem;
+    background-color: lightgreen;
+    opacity: 0.7;
+    color: black;
+    font-weight: bold;
+    width: 40%;
+    font-size: 24px;
+    line-height: 30px;  
+    transition: 0.3s; 
+}
+
+.copy:hover{
+    transform: scale(1.1);
 }
