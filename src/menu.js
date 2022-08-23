@@ -3,7 +3,9 @@ function populateMenu(){
 
     document.querySelector('.menu').classList.add('active');
     const content = document.querySelector('#content');
-
+    
+    const bgmenu = document.createElement('div');
+    bgmenu.classList.add('bgMenu');
 
     const menuContainer = document.createElement('div');
     menuContainer.classList.add('menuContainer');
@@ -36,8 +38,8 @@ function populateMenu(){
 
         menuContainer.appendChild(item);
     }
-    content.appendChild(menuContainer);
-
+    bgmenu.appendChild(menuContainer);
+    content.appendChild(bgmenu);
 }
 
 export default populateMenu;
