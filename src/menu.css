@@ -1,29 +1,54 @@
 .menuContainer{
-  width: 70%;
+  max-width: 60%;
+  
   margin: auto;
   box-sizing: border-box;
   height: 100%;
-  background-color: yellow;
   position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
   padding: 1rem;
 }
 
 .topRight{
-    width: 100px;
-    height: 100px;
     background-image: url(./shiba-d.png);
-    background-size: cover;
-    position: absolute;
-    right: -60px;
+    left: -40px;
 }
 
+
 .bottomLeft{
-    width: 100px;
-    height: 100px;
     background-image: url(./shiba-c.png);
-    background-size: cover;
-    position: absolute;
     bottom: 0px;
     left: -30px;
+}
+
+.topRight, .bottomLeft{
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    position: absolute;
+}
+
+.item{
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    grid-template-columns: 150px 1fr;
+    gap: 10px;
+    font-size: 1rem;
+}
+
+.menuItemImg{
+    width: 100%;
+    height: 150px;
+    grid-area: 1/1/3/2;
+    background-image: url(./itembg.png);
+    background-size: cover;
 
 }

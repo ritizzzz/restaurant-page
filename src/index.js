@@ -42,7 +42,7 @@ function populateAbout(){
 
     const copy = document.createElement('div');
     copy.classList.add('copy');
-    copy.innerText = "This is a shiba inu restaurant. Shibas are considered as heckin good bois all over the world. An eating in a restaurant dedicated to these heckin good bois is a great experience. So sit down, relax, scroll through the menu and get ready for a divine experience.";
+    copy.innerText = "This is a shiba inu petting place. Shibas are considered as heckin good bois all over the world. Petting a shiba inu is a one of the things everyone should experience. So sit down, relax and look through the available shiba inus.";
     
     div.appendChild(copy);
     document.querySelector('#content').appendChild(div);
