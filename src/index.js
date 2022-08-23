@@ -1,4 +1,8 @@
 import "./main-styles.css";
+import populateMenu from "./menu";
+
+
+
 
 function clearDom(){
     document.querySelector('#content').innerHTML = '';
