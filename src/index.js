@@ -1,5 +1,6 @@
 import "./main-styles.css";
 import populateMenu from "./menu";
+import populateContact from "./contact";
 
 
 
