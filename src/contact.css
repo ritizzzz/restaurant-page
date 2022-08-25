@@ -11,37 +11,35 @@
 
 .contactContainer{
     width: max(300px, 60%);
-    height: 100%;
+    height: max-content;
     background-color: lightgreen;
     border-radius: 10px;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
 }
 
 .contactHeader{
     font-style: italic;
     font-family: cursive;
-    margin-bottom: 15px;
 }
 
 .locationDiv{
     padding: 1rem;
-    width: 40%;
+    width: max(40%, 200px);
     display: grid;
     grid-template-columns: max-content 1fr 1fr;
     grid-template-rows: max-content 1fr;
     gap: 10px;
-    transform: scale(1.3);
 }
 
 .locationAddress{
     display: flex;
     justify-content: end;
 }
-.locationImage{
+.locationImage, .managerImage{
     width: 120px;
     height: 120px;  
     background-image: url(./location.jpeg); 
@@ -49,6 +47,33 @@
     grid-area: 1/1/3/2;
 }
 
+.managerDiv{
+    width: max(40%, 200px);
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    grid-template-columns: max-content 1fr;
+    gap: 10px;
+}
+
+.managerImage{
+    background-image: url(./manager.jpg);
+}
+
+.phoneIcon, .emailIcon{
+    width: 20px;
+    height: 20px;
+}
+
+.phoneDiv, .emailDiv{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.email{
+    display: inline-block;
+}
 .locationText{
     grid-area: 2/2/3/4;
 }
